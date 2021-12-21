@@ -11,28 +11,28 @@ class MyGrid(GridLayout):
         self.cols = 2
 
         self.add_widget(Label(text="Airline Companies: "))
-        self.name = TextInput(multiline=False)
-        self.add_widget(self.name)
+        self.airline_companies = TextInput(multiline=False)
+        self.add_widget(self.airline_companies)
 
         self.add_widget(Label(text="Customers: "))
-        self.lastName = TextInput(multiline=False)
-        self.add_widget(self.lastName)
+        self.customers = TextInput(multiline=False)
+        self.add_widget(self.customers)
 
         self.add_widget(Label(text="Administrators: "))
-        self.email = TextInput(multiline=False)
-        self.add_widget(self.email)
+        self.administrators = TextInput(multiline=False)
+        self.add_widget(self.administrators)
 
         self.add_widget(Label(text="Flights Per Company: "))
-        self.name = TextInput(multiline=False)
-        self.add_widget(self.name)
+        self.flights_per_company = TextInput(multiline=False)
+        self.add_widget(self.flights_per_company)
 
         self.add_widget(Label(text="Tickets Per Customer: "))
-        self.lastName = TextInput(multiline=False)
-        self.add_widget(self.lastName)
+        self.tickets_per_customer = TextInput(multiline=False)
+        self.add_widget(self.tickets_per_customer)
 
         self.add_widget(Label(text="Countries: "))
-        self.email = TextInput(multiline=False)
-        self.add_widget(self.email)
+        self.countries = TextInput(multiline=False)
+        self.add_widget(self.countries)
 
 
 class MyApp(App):
