@@ -1,7 +1,7 @@
 import kivy
 from kivy.app import App
 from kivy.uix.widget import Widget
-from kivy.properties import ObjectProperty, StringProperty
+from kivy.properties import ObjectProperty
 
 
 class MyGrid(Widget):
@@ -12,10 +12,6 @@ class MyGrid(Widget):
     flights_per_company = ObjectProperty(None)
     tickets_per_customer = ObjectProperty(None)
     countries = ObjectProperty(None)
-
-    # State labels
-    slabel1 = StringProperty()
-    slabel2 = StringProperty()
 
     def btn(self):
         print("Airline Companies:", self.airline_companies.text,
@@ -38,6 +34,7 @@ class MyGrid(Widget):
             print("Checkbox Checked")
         else:
             print("Checkbox Unchecked")
+
 
 
 class MyApp(App):
