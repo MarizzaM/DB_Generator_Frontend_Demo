@@ -2,7 +2,24 @@ import kivy
 from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.properties import ObjectProperty, StringProperty
+# drop-down menu is a list of items that
+# appear whenever a piece of text or a
+# button is clicked.
+# To use drop down you must have ti import it
+from kivy.uix.dropdown import DropDown
 
+# module consists the floatlayout
+# to work with FloatLayout first
+# you have to import it
+from kivy.uix.floatlayout import FloatLayout
+
+# The Button is a Label with associated actions that
+# are triggered when the button is pressed (
+# or released after a click / touch).
+from kivy.uix.button import Button
+
+class CustomDropDown(DropDown):
+    pass
 
 class MyGrid(Widget):
 
@@ -66,6 +83,10 @@ class MyGrid(Widget):
         print
         self.ids.rbutton1.state, self.ids.rbutton2.state
 
+    # Get dropdown value when clicked
+    def spinner_clicked(self, value):
+        # get selected dropdown value and change the label text
+        self.ids.selected_value.text = f"You have selected {value}"
 
 
 class MyApp(App):

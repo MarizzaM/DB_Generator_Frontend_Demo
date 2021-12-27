@@ -54,7 +54,7 @@
 
 
         GridLayout:
-            cols:2
+            cols:3
 
             GridLayout:
                 cols:2
@@ -115,6 +115,20 @@
                 Label:
                     id: label2
                     text: root.slabel2
+
+            GridLayout:
+                cols:1
+
+                Spinner:
+                    id: spinner_id
+                    text: "Click"
+                    values: ["Add to DB", "Replace DB"]
+                    on_text: root.spinner_clicked(spinner_id.text)
+
+                Label:
+                    id: selected_value
+                    text:""
+                    font_size: 14
 
 
         Button:
